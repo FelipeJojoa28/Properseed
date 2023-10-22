@@ -1,0 +1,338 @@
+/*Reset CSS*/
+html, body, div, span, applet, object, iframe,h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center,
+dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed,  figure, figcaption, footer, header, hgroup,  menu, nav, output, ruby, section, summary, time, mark, audio, video {
+	margin: 0; padding: 0; border: 0; font-size: 100%; font: inherit; vertical-align: baseline;}
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section { display: block;}
+body {line-height: 1;}
+ol, ul {list-style: none;}
+blockquote, q {quotes: none;}
+blockquote:before, blockquote:after,q:before, q:after {content: '';content: none;}
+table {border-collapse: collapse;border-spacing: 0;}
+/*Termina el reset*/
+
+body{
+    font-family: 'Poppins', sans-serif;
+}
+
+.Header  {
+	background: linear-gradient(to right, #16d39a, #04b4b1);
+	height: 56px;
+	min-height: 56px;
+	border-bottom: 1px solid #000000;
+}
+
+.Header > h2 {
+	font-size: 1.9em;
+	color: #ffffff;
+	float: left;
+	margin-top: 13px;
+	margin-left: 20px;
+}
+
+.Header > i {
+	font-size: 40px;
+	width: 30px;
+	color: #ffffff;
+	margin-top: 8px;
+	margin-right: 20px;
+}
+
+.Header > a {
+	width: 30px;
+	color: #ffffff;
+	margin-top: 20px;
+	margin-right: 30px;
+	font-size: 2.2em;
+}
+
+.Nav {
+	float: left;
+	min-height: 100vh;
+	min-width: 280px;
+	width: 286px;
+	background-color: #000000;
+	border-right: #000000 2px solid;
+	box-shadow: 0px 71px 30px 10px rgba(0,0,0,.6), 0 7px 10px -5px rgba(80,80,80,.4);
+}
+.FondoNav img{
+	height: 100vh;
+	width: 287px;
+	opacity: 0.3;
+	filter: grayscale(60%);
+	position: absolute;
+}
+
+.Section {
+	background-color: #eeeeee;
+	height: 100vh;
+	margin-left: 288px;
+	overflow: auto;
+}
+
+.Logo p{
+	font-size: 1.9em;
+	margin: 0px 20px;
+	padding: 11px;
+	text-align: center;
+	color: #ffffff;
+	border-bottom: #fff 1px solid;
+}
+
+.BarraNavegacion{
+	padding-top: 20px;
+	position: absolute;
+}
+
+.BarraNavegacion button {
+	display: block;
+	border-radius: 8px;
+	/*background-color: blue; //Cambia el color cuando se selecciona*/
+	padding: 0px 10px;
+	margin: 5px 10px;
+	width: 260px;
+	text-align: left;
+}
+
+.btn {
+	width: 100%;
+	height: 50px;
+	font-family: 'Poppins', sans-serif;
+	font-size: 18px;
+	color: #ffffff;
+	border-radius: 10px;
+	background-color: transparent;
+	border-color: transparent;
+	transition: .5s;
+}
+
+.btn > i{
+	font-size: 30px;
+	width: 30px;
+	color: #ffffff;
+}
+
+.btn > span {
+	padding-left: 7px;
+}
+
+.btn:hover {
+	background: #16d39a;
+}
+
+.ItemName{
+	width: 180px;
+	height: 20px;
+	font-size: 1.1em;
+	color: white;
+	margin-left: 50px;
+	padding-top: 13px;
+}
+
+.Contenedor{
+	margin-top: 10px;
+    padding: 15px 15px 0 15px;
+	height: 100vh-56px;
+	display: flex;
+}
+
+.Lista-dispositivos {
+    width: 64%;
+	max-width: 64%;
+	margin-left: 15px;
+	margin-top: 20px;
+    background-color: #ffffff;
+    border-radius: 7px;
+	box-shadow: 0 4px 20px 0 rgba(0,0,0,.14), 0 7px 10px -5px rgba(80,80,80,.4);
+}
+
+.Lista-dispositivos .Titulo {
+	margin: 10px 30px 0 30px ;
+    padding-top: 5px;
+    position: relative;
+	margin-bottom:30px;
+}
+
+.Lista-dispositivos .Cont-icon {
+	border-radius: 3px;
+    margin-top: -35px;
+    margin-right: 25px;
+    float: left;
+    box-shadow: 0 4px 20px 0 rgba(0,0,0,.14), 0 7px 10px -5px rgba(80,80,80,.4);
+    background: linear-gradient(60deg,#16d39a, #04b4b1);
+    width: 70px;
+    height: 70px;
+    padding: auto;
+}
+
+.Lista-dispositivos .Cont-icon > i {
+	color: #ffffff;
+	font-size: 39px;
+	margin-top: 15px;
+	margin-left: 15px;
+}	 
+
+.Lista-dispositivos .Name-titulo {
+	margin-top: 15px;
+    color: #3c4858;
+    font-size: 1.3em;
+}
+
+.Lista-dispositivos .Contenido {
+	margin: 0px 10px; 
+	padding-bottom: 15px;
+	padding-left: 20px;
+	padding-right: 20px;
+	padding-top: 10px;
+	background-color: #ffffff;
+}
+
+.Lista-dispositivos .Contenido .Tabla_dispositivos {
+	width: 95%;
+	margin: auto;
+}
+
+.Lista-dispositivos .Contenido .Tabla_dispositivos>thead>tr>td {
+	padding: 15px 8px;
+	vertical-align: middle;
+	border-bottom: #ddd 1px solid;
+	font-size: 1.1em;
+	color: #26a07b;
+}
+
+.Lista-dispositivos .Contenido .Tabla_dispositivos>thead {
+	margin-top: 10px;
+}
+
+.Lista-dispositivos .Contenido .Tabla_dispositivos>tbody>tr>td {
+    padding: 15px 8px;
+	vertical-align: middle;
+	border-bottom: #ddd 1px solid;
+}
+
+.Lista-dispositivos .Contenido .Tabla_dispositivos .btn_tabla_consultar {
+	margin: 0;
+	padding: 5px 6px;
+	cursor: pointer;
+	border-radius: 0.3rem;
+	color: #fff;
+    background-color: #00bcd4;
+    border-color: #00bcd4;
+    box-shadow: 0 4px 4px 0 rgba(16, 211, 218, 0.24), 0 7px 10px -5px rgba(16, 211, 218, 0.24);
+}
+
+.Lista-dispositivos .Contenido .Tabla_dispositivos .btn_tabla_modificar{
+	margin: 0;
+	padding: 5px 6px;
+	cursor: pointer;
+	border-radius: .3rem;
+	color: #fff;
+    background-color: #4caf50;
+    border-color: #4caf50;
+    box-shadow: 0 4px 4px 0 rgba(76,175,80,.24), 0 3px 1px -2px rgba(76,175,80,.2), 0 1px 5px 0 rgba(76,175,80,.12);
+}
+
+.Perfil {
+    width: 32%;
+    max-width: 32%;
+    margin-left: 15px;
+	margin-top: 20px;
+    background-color: #ffffff;
+    border-radius: 7px;
+	box-shadow: 0 4px 20px 0 rgba(0,0,0,.14), 0 7px 10px -5px rgba(80,80,80,.4);
+}
+
+.Perfil .Titulo {
+	margin: 20px 10px 0 20px ;
+    padding-top: 5px;
+    position: relative;
+}
+
+.Perfil .Name-titulo {
+    font-size: 1.3em;
+}
+
+.Perfil .Cont-icon {
+	border-radius: 3px;
+    margin-top: -45px;
+    margin-right: 15px;
+    float: left;
+    box-shadow: 0 4px 20px 0 rgba(0,0,0,.14), 0 7px 10px -5px rgba(80,80,80,.4);
+    background: linear-gradient(60deg,#16d39a, #04b4b1);
+    width: 70px;
+    height: 70px;
+    padding: auto;
+}
+
+.Perfil .Cont-icon > i {
+	color: #ffffff;
+	font-size: 39px;
+	margin-top: 15px;
+	margin-left: 12px;
+}
+
+.Perfil .Contenido {
+	margin: 0px 10px;
+	background-color: #ffffff;
+	padding-top: 25px;
+	width: 100%-20px;
+}
+
+.Perfil .Contenido .Fondo {
+	width: 100%;
+	border-radius: 20px;
+}
+
+.Perfil .Contenido .Fondo > img{
+	border-radius: 10px;
+}
+
+.Perfil .Contenido .Avatar {
+	width: 30%;
+	margin: 0px auto;
+	margin-top: -50px;
+	background-color: #ffffff;
+}
+
+.Perfil .Contenido .Nombre {
+	margin: 2px auto;
+	text-align: center;
+	font-size: 1.5em;
+	color: #16d39a;
+}
+
+.Perfil .Contenido .Informacion {
+	margin: 25px 0px;
+	width: 100%;
+	border-bottom: 1px solid #a59e9e;
+}
+
+.Perfil .Contenido .Informacion .Row {
+	height: 30px;
+	width: 100%;
+}
+
+.Perfil .Contenido .Informacion .Row .Titulo {
+	width: 100%;
+	color: #000000;
+}
+
+.Perfil .Contenido .Informacion .Row .Descripcion {
+	width: 100%;
+	color: #525252;
+}
+
+.Perfil .Contenido .Dispositivos {
+	margin: 20px 0px 10px 0px;
+}
+
+.Perfil .Contenido .Dispositivos .Row {
+	height: 20px;
+}
+
+.Perfil .Contenido .Dispositivos .Row .Numero {
+	height: 20px;
+	color: #525252;
+}
+
+
+
