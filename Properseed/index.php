@@ -1,5 +1,0 @@
-<?
-
-    header("Location: SPRINT2");
-    
-?>
