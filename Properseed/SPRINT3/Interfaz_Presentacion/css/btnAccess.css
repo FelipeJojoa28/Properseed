@@ -1,0 +1,15 @@
+#btnAccess {
+    display: none;
+}
+
+header label{
+    float: right;
+    font-size: 26px;
+    margin: 28px 0;
+    cursor: pointer;
+    z-index: 100;
+}
+
+.login {
+    display: none;
+}
